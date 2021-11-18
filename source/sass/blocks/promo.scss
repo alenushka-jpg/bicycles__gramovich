@@ -1,1 +1,35 @@
-//к
+.promo {
+  background-color: $dark-background;
+  background-image: url("/img/bicycles-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.promo__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 46px;
+  line-height: 64px;
+  letter-spacing: -0.005em;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: rgba($basic-white, 0.8);
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
