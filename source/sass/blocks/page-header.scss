@@ -1,1 +1,18 @@
-//к
+.page-header__top {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+}
+
+.page-header__burger {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: $additional-color;
+}
