@@ -1,7 +1,7 @@
 {
   "extends": "stylelint-config-htmlacademy",
+
   "rules": {
-    "number-max-precision": null,
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}]
   }
