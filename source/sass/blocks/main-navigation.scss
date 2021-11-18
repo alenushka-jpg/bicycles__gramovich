@@ -1,5 +1,5 @@
 .main-navigation {
-  width: 880px;
+  max-width: 880px;
   margin-left: auto;
   margin-right: auto;
 
@@ -47,6 +47,7 @@
   line-height: 32px;
   letter-spacing: -0.005em;
   text-decoration: none;
+  color: rgba($basic-white, 0.7);
 
   @media (max-width: $tablet-width) {
     padding: 16px;

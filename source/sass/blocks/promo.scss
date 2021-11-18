@@ -2,12 +2,61 @@
   background-color: $dark-background;
   background-image: url("/img/bicycles-background.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 0;
+  background-position: center;
+  background-size: 1440px 825px;
+
+  @media (max-width: $tablet-width) {
+    background-color: inherit;
+    background-image: none;
+  }
+}
+
+.promo__container {
+  display: grid;
+  grid-template-columns: 1fr 326px;
+  column-gap: 186px;
+  width: 880px;
+  padding-top: 318px;
+  padding-bottom: 243px;
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    column-gap: 0;
+    grid-template-columns: 1fr;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: -1;
+  }
+}
+
+.promo__content {
+  @media (max-width: $tablet-width) {
+    padding-top: 134px;
+    background-image: url("/img/bicycles-background-tablet.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 120px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-image: url("/img/bicycles-background-mobile.jpg");
+  }
+}
+
+.promo__logo {
+  margin-bottom: 31px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .promo__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 46px;
   line-height: 64px;
@@ -15,12 +64,15 @@
   color: $basic-white;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 42px;
+    text-align: center;
   }
 }
 
 .promo__text {
+  display: block;
   margin: 0;
   font-weight: 300;
   font-size: 20px;
@@ -29,7 +81,17 @@
   color: rgba($basic-white, 0.8);
 
   @media (max-width: $tablet-width) {
+    width: 435px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 80px;
     font-size: 18px;
     line-height: 32px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: auto;
+    margin-bottom: 70px;
   }
 }

@@ -1,0 +1,75 @@
+.user-data {
+  @media (max-width: $tablet-width) {
+    padding-top: 70px;
+    background-color: $basic-white;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.user-data__form {
+  @media (max-width: $tablet-width) {
+    width: 321px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 288px;
+  }
+}
+
+.user-data__text {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  color: $basic-white;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $basic-black;
+  }
+}
+
+.user-data__input {
+  display: block;
+  width: 100%;
+  padding-top: 13px;
+  padding-left: 29px;
+  padding-bottom: 9px;
+  background-color: $basic-white;
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba($primary-font, 0.5);
+  }
+}
+
+.user-data__contacts {
+  margin-bottom: 20px;
+}
+
+.user-data__button {
+  width: 100%;
+  padding: 15px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  text-align: center;
+  background-color: $additional-color;
+  border-radius: 6px;
+}
