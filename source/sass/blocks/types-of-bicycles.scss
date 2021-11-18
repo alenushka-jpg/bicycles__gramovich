@@ -1,0 +1,28 @@
+.types-of-bicycles {
+  background-color: $light-background-200;
+}
+
+.types-of-bicycles__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
+
+.types-of-bicycles__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.types-of-bicycles__name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+}

@@ -1,0 +1,31 @@
+.data-form__text {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.data-form__input {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+
+  &::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba($primary-font, 0.5);
+  }
+}
+
+.data-form__button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: $additional-color;
+  border-radius: 6px;
+}

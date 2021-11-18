@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="page-header__navigation main-navigation">
         <ul class="main-navigation__list">
           <li class="main-navigation__item">О нас</li>
@@ -16,14 +16,14 @@
           <li class="main-navigation__item">Видео про велосипеды</li>
           <li class="main-navigation__item">Контакты</li>
         </ul>
-        <button class="main-navigation__close" type="button">
+        <button class="main-navigation__close button" type="button">
           <span class="visually-hidden">Закрыть меню</span>
           <img class="main-navigation__close-icon" src="./img/svg/icon_close.svg" width="22" height="22" alt="">
         </button>
       </nav>
       <div class="page-header__top">
-        <img src="./img/svg/logo.svg" width="68" height="21" alt="">
-        <button class="page-header__burger">
+        <img class="logo" src="./img/svg/logo.svg" width="68" height="21" alt="">
+        <button class="page-header__burger button">
           <span class="visually-hidden">Открыть меню</span>
           <img src="./img/svg/icon_burger.svg" width="68" height="21" alt="">
         </button>
@@ -31,24 +31,26 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <h1 class="promo__title">Мы продаем велосипеды</h1>
-        <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
-        <form class="promo__form data-form" action="#" method="POST">
-          <span class="data-form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
-          <div class="data-form__contacts">
-            <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
-            <input class="data-form__input" type="text" id="name-input" placeholder="Введите Ваше Имя"
-            aria-label="Поле для ввода Вашего имени" required>
-          </div>
-          <div class="data-form__contacts">
-            <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
-            <input class="data-form__input" type="tel" id="tel-input" placeholder="Введите Ваш номер телефона"
-            aria-label="Поле для ввода Вашего номера телефона" required>
-          </div>
-          <button class="data-form__button">Подобрать велосипед мечты</button>
-        </form>
+        <div class="promo__container container">
+          <h1 class="promo__title">Мы продаем велосипеды</h1>
+          <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+          <form class="promo__form data-form" action="#" method="POST">
+            <span class="data-form__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
+            <div class="data-form__contacts">
+              <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
+              <input class="data-form__input" type="text" id="name-input" placeholder="Введите Ваше Имя"
+              aria-label="Поле для ввода Вашего имени" required>
+            </div>
+            <div class="data-form__contacts">
+              <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
+              <input class="data-form__input" type="tel" id="tel-input" placeholder="Введите Ваш номер телефона"
+              aria-label="Поле для ввода Вашего номера телефона" required>
+            </div>
+            <button class="data-form__button button">Подобрать велосипед мечты</button>
+          </form>
+        </div>
       </section>
-      <section class="about-us">
+      <section class="about-us container">
         <h2 class="about-us__title">Несколько фактов о нас</h2>
         <ol class="about-us__list">
           <li class="about-us__item">
@@ -70,34 +72,38 @@
         </ol>
       </section>
       <section class="types-of-bicycles">
-        <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
-        <ul class="types-of-bicycles__list">
-          <li class="types-of-bicycles__item">
-            <img class="types-of-bicycles__img" src="./img/first-example.jpg" width="342" height="503" alt="Фотография дорожного велосипеда">
-            <span class="types-of-bicycles__name">Дорожный велосипед</span>
-          </li>
-          <li class="types-of-bicycles__item">
-            <img class="types-of-bicycles__img" src="./img/second-example.jpg" width="342" height="566" alt="Фотография горного велосипеда">
-            <span class="types-of-bicycles__name">Горный велосипед</span>
-          </li>
-          <li class="types-of-bicycles__item">
-            <img class="types-of-bicycles__img" src="./img/third-example.jpg" width="342" height="512" alt="Фотография детского велосипеда">
-            <span class="types-of-bicycles__name">Детский велосипед</span>
-          </li>
-        </ul>
+        <div class="types-of-bicycles__container container">
+          <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
+          <ul class="types-of-bicycles__list">
+            <li class="types-of-bicycles__item">
+              <img class="types-of-bicycles__img" src="./img/first-example.jpg" width="342" height="503" alt="Фотография дорожного велосипеда">
+              <span class="types-of-bicycles__name">Дорожный велосипед</span>
+            </li>
+            <li class="types-of-bicycles__item">
+              <img class="types-of-bicycles__img" src="./img/second-example.jpg" width="342" height="566" alt="Фотография горного велосипеда">
+              <span class="types-of-bicycles__name">Горный велосипед</span>
+            </li>
+            <li class="types-of-bicycles__item">
+              <img class="types-of-bicycles__img" src="./img/third-example.jpg" width="342" height="512" alt="Фотография детского велосипеда">
+              <span class="types-of-bicycles__name">Детский велосипед</span>
+            </li>
+          </ul>
+        </div>
       </section>
       <section class="video">
-        <h2 class="video__title">Видео про велосипеды</h2>
-        <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-        <div class="video__preview">
-          <button class="video__button" type="button">
-            <span class="visually-hidden">Включить видео про велосипеды</span>
-          </button>
-          <img class="video__img" src="./img/video-preview.jpg" height="522" width="929" alt="Фотография велосипеда">
+        <div class="video__container container">
+          <h2 class="video__title">Видео про велосипеды</h2>
+          <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <div class="video__preview">
+            <button class="video__button button" type="button">
+              <span class="visually-hidden">Включить видео про велосипеды</span>
+            </button>
+            <img class="video__img" src="./img/video-preview.jpg" height="522" width="929" alt="Фотография велосипеда">
+          </div>
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <h2 class="page-footer__title">Как нас найти?</h2>
       <p class="page-footer__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <img class="page-footer__img-map" src="./img/map.png" height="530" width="957" alt="Карта адреса">
