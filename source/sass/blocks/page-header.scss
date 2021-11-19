@@ -4,12 +4,20 @@
   z-index: 20;
 }
 
+.page-header__navigation {
+  @media (max-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+  }
+}
+
 .page-header__top {
   display: none;
 
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 50px;
     padding-left: 21px;
   }

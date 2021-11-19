@@ -11,6 +11,11 @@
     padding-right: 89px;
     padding-bottom: 70px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .types-of-bicycles__title {

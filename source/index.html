@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head class="page-body">
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,33 +9,56 @@
   </head>
   <body>
     <header class="page-header container">
-      <nav class="page-header__navigation main-navigation">
+      <div class="page-header__top">
+        <svg class="logo" width="68" height="21">
+          <use xlink:href="./img/sprite.svg#logo"></use>
+        </svg>
+        <button class="page-header__burger button">
+          <span class="visually-hidden">Открыть меню</span>
+          <svg width="30" height="30">
+            <use xlink:href="./img/sprite.svg#icon_burger"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="page-header__navigation main-navigation main-navigation">
+        <div class="overlay"></div>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="">О нас</a>
+            <a class="main-navigation__link" href="#about-us">О нас
+              <svg class="main-navigation__arrow" width="12" height="8">
+                <use xlink:href="./img/sprite.svg#icon_arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="">Виды велосипедов</a>
+            <a class="main-navigation__link" href="#types">Виды велосипедов
+              <svg class="main-navigation__arrow" width="12" height="8">
+                <use xlink:href="./img/sprite.svg#icon_arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="">Видео про велосипеды</a>
+            <a class="main-navigation__link" href="#video">Видео про велосипеды
+              <svg class="main-navigation__arrow" width="12" height="8">
+                <use xlink:href="./img/sprite.svg#icon_arrow"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-navigation__item">
-            <a class="main-navigation__link" href="">Контакты</a>
+            <a class="main-navigation__link" href="#contacts">Контакты
+              <svg class="main-navigation__arrow" width="12" height="8">
+                <use xlink:href="./img/sprite.svg#icon_arrow"></use>
+              </svg>
+            </a>
           </li>
         </ul>
         <button class="main-navigation__close button" type="button">
           <span class="visually-hidden">Закрыть меню</span>
-          <img class="main-navigation__close-icon" src="./img/svg/icon_close.svg" width="22" height="22" alt="">
+          <svg class="main-navigation__icon-close" width="24" height="25">
+            <use xlink:href="./img/sprite.svg#icon_close"></use>
+          </svg>
         </button>
       </nav>
-      <div class="page-header__top">
-        <img class="logo" src="./img/svg/logo.svg" width="68" height="21" alt="">
-        <button class="page-header__burger button">
-          <span class="visually-hidden">Открыть меню</span>
-          <img src="./img/svg/icon_burger.svg" width="30" height="30" alt="">
-        </button>
-      </div>
     </header>
     <main class="page-main">
       <section class="promo">
@@ -63,7 +86,7 @@
           </section>
         </div>
       </section>
-      <section class="about-us container">
+      <section class="about-us container" id="about-us">
         <h2 class="about-us__title">Несколько фактов о нас</h2>
         <ol class="about-us__list">
           <li class="about-us__item">
@@ -84,7 +107,7 @@
           </li>
         </ol>
       </section>
-      <section class="types-of-bicycles">
+      <section class="types-of-bicycles" id="types">
         <div class="types-of-bicycles__container container">
           <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
           <ul class="types-of-bicycles__list">
@@ -124,13 +147,16 @@
           </ul>
         </div>
       </section>
-      <section class="video">
+      <section class="video" id="video">
         <div class="container">
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <div class="video__preview">
             <button class="video__button button" type="button">
               <span class="visually-hidden">Включить видео про велосипеды</span>
+              <svg class="video__play" width="65" height="65">
+                <use xlink:href="./img/sprite.svg#icon_play"></use>
+              </svg>
             </button>
             <picture>
               <source media="(max-width: 767px)" type="image/webp" srcset="./img/video-preview-mobile.webp 1x, ./img/video-preview-mobile@2x.webp 2x">
@@ -143,7 +169,7 @@
           </div>
         </div>
       </section>
-      <section class="address container">
+      <section class="address container" id="contacts">
         <h2 class="address__title">Как нас найти?</h2>
         <p class="address__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
