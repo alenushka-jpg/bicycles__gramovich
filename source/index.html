@@ -125,14 +125,21 @@
         </div>
       </section>
       <section class="video">
-        <div class="video__container container">
+        <div class="container">
           <h2 class="video__title">Видео про велосипеды</h2>
           <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <div class="video__preview">
             <button class="video__button button" type="button">
               <span class="visually-hidden">Включить видео про велосипеды</span>
             </button>
-            <img class="video__img" src="./img/video-preview.jpg" height="522" width="929" alt="Фотография велосипеда">
+            <picture>
+              <source media="(max-width: 767px)" type="image/webp" srcset="./img/video-preview-mobile.webp 1x, ./img/video-preview-mobile@2x.webp 2x">
+              <source media="(max-width: 1023px)" type="image/webp" srcset="./img/video-preview-tablet.webp 1x, ./img/video-preview-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
+              <source media="(max-width: 767px)" srcset="./img/video-preview-mobile.jpg 1x, ./img/video-preview-mobile@2x.jpg 2x">
+              <source media="(max-width: 1023px)" srcset="./img/video-preview-tablet.jpg 1x, ./img/video-preview-tablet@2x.jpg 2x">
+              <img class="video__img" src="./img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522" width="929" alt="Фотография велосипеда">
+            </picture>
           </div>
         </div>
       </section>
