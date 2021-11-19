@@ -2,12 +2,24 @@
   background-color: $light-background-200;
 }
 
+.types-of-bicycles__container {
+  padding: 157px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-left: 89px;
+    padding-right: 89px;
+    padding-bottom: 70px;
+  }
+}
+
 .types-of-bicycles__title {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 51px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;
-
+  text-align: center;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -16,9 +28,50 @@
 }
 
 .types-of-bicycles__list {
+  display: flex;
+  column-gap: 50px;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 50px;
+  }
+}
+
+.types-of-bicycles__item {
+  text-align: center;
+
+  &--first {
+    margin-top: 10px;
+  }
+
+  &--second {
+    margin-top: 39px;
+  }
+
+  @media (max-width: $tablet-width) {
+    &--first {
+      margin-top: 0;
+    }
+
+    &--second {
+      margin-top: 0;
+    }
+  }
+}
+
+.types-of-bicycles__picture {
+  margin-bottom: 20px;
+}
+
+.types-of-bicycles__img {
+  @media (max-width: $tablet-width) {
+    width: 270px;
+    height: 300px;
+  }
 }
 
 .types-of-bicycles__name {

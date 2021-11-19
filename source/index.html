@@ -88,16 +88,37 @@
         <div class="types-of-bicycles__container container">
           <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
           <ul class="types-of-bicycles__list">
-            <li class="types-of-bicycles__item">
-              <img class="types-of-bicycles__img" src="./img/first-example.jpg" width="342" height="503" alt="Фотография дорожного велосипеда">
+            <li class="types-of-bicycles__item types-of-bicycles__item--first">
+              <div class="types-of-bicycles__picture">
+                <picture>
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/first-example-tablet.webp 1x, ./img/first-example-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/first-example.webp 1x, ./img/first-example@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/first-example-tablet.jpg 1x, ./img/first-example-tablet@2x.jpg 2x">
+                  <img class="types-of-bicycles__img" src="./img/first-example.jpg" srcset="./img/first-example@2x.jpg 2x" width="342" height="503" alt="Фотография дорожного велосипеда">
+                </picture>
+              </div>
               <span class="types-of-bicycles__name">Дорожный велосипед</span>
             </li>
-            <li class="types-of-bicycles__item">
-              <img class="types-of-bicycles__img" src="./img/second-example.jpg" width="342" height="566" alt="Фотография горного велосипеда">
+            <li class="types-of-bicycles__item types-of-bicycles__item--second">
+              <div class="types-of-bicycles__picture">
+                <picture>
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/second-example-tablet.webp 1x, ./img/second-example-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/second-example.webp 1x, ./img/second-example@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/second-example-tablet.jpg 1x, ./img/second-example-tablet@2x.jpg 2x">
+                  <img class="types-of-bicycles__img" src="./img/second-example.jpg" srcset="./img/second-example@2x.jpg 2x" width="342" height="566" alt="Фотография горного велосипеда">
+                </picture>
+              </div>
               <span class="types-of-bicycles__name">Горный велосипед</span>
             </li>
-            <li class="types-of-bicycles__item">
-              <img class="types-of-bicycles__img" src="./img/third-example.jpg" width="342" height="512" alt="Фотография детского велосипеда">
+            <li class="types-of-bicycles__item types-of-bicycles__item--third">
+              <div class="types-of-bicycles__picture">
+                <picture>
+                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/third-example-tablet.webp 1x, ./img/third-example-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/third-example.webp 1x, ./img/third-example@2x.webp 2x">
+                  <source media="(max-width: 1023px)" srcset="./img/third-example-tablet.jpg 1x, ./img/third-example-tablet@2x.jpg 2x">
+                  <img class="types-of-bicycles__img" src="./img/third-example.jpg" srcset="./img/third-example@2x.jpg 2x" width="342" height="512" alt="Фотография детского велосипеда">
+                </picture>
+              </div>
               <span class="types-of-bicycles__name">Детский велосипед</span>
             </li>
           </ul>
