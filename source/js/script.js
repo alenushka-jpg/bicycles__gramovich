@@ -7,8 +7,6 @@ const navigationLinks = document.querySelectorAll('.main-navigation__link');
 
 pageHeader.classList.remove('no-js');
 
-const isEscapeEvent = (evt) => evt.key === 'Escape' || evt.key === 'Esc';
-
 function showNavigation() {
   navigation.classList.add('main-navigation--open');
 
