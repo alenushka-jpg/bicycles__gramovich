@@ -7,12 +7,30 @@
   @media (max-width: $tablet-width) {
     position: absolute;
     display: none;
-    width: 100%;
+    max-width: 100%;
     border-bottom: none;
 
     &--open {
       display: block;
     }
+  }
+}
+
+.no-js .main-navigation {
+  position: static;
+  display: block;
+  height: auto;
+
+  .main-navigation__list {
+    padding-top: 0;
+  }
+
+  .main-navigation__close {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
   }
 }
 
