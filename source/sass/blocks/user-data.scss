@@ -24,7 +24,8 @@
 
 .user-data__text {
   display: block;
-  margin-bottom: 20px;
+  padding-top: 5px;
+  margin-bottom: 19px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -33,6 +34,7 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
+    padding-top: 0;
     margin-bottom: 30px;
     font-size: 18px;
     color: $basic-black;
@@ -65,7 +67,10 @@
 
 .user-data__button {
   width: 100%;
-  padding: 15px;
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 14px;
   font-weight: 600;
   font-size: 15px;
   line-height: 21px;

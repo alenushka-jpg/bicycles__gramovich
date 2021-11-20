@@ -13,11 +13,11 @@
 
 .promo__container {
   display: grid;
-  grid-template-columns: 1fr 326px;
+  grid-template-columns: 1fr 327px;
   column-gap: 186px;
   width: 880px;
   padding-top: 318px;
-  padding-bottom: 243px;
+  padding-bottom: 240px;
 
   @media (max-width: $tablet-width) {
     width: auto;

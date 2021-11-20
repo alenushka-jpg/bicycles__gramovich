@@ -2,7 +2,7 @@
   padding-top: 150px;
   padding-left: 137px;
   padding-right: 137px;
-  margin-bottom: 123px;
+  margin-bottom: 150px;
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
@@ -78,6 +78,7 @@
 }
 
 .about-us__number {
+  margin-bottom: 17px;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;

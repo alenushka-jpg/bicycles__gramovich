@@ -1,5 +1,7 @@
 .main-navigation {
   max-width: 880px;
+  padding-left: 20px;
+  padding-right: 10px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid rgba($basic-white, 0.2);
@@ -8,6 +10,8 @@
     display: none;
     width: 100%;
     max-width: 1023px;
+    padding-left: 0;
+    padding-right: 0;
     border-bottom: none;
 
     &--open {

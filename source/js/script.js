@@ -40,3 +40,21 @@ window.addEventListener("keydown", function (evt) {
 
 burger.addEventListener('click', onBurgerClick);
 navigationClose.addEventListener('click', onCloseClick);
+
+// const form = document.querySelector('.user-data__form');
+// const text = document.querySelector('.user-data__text');
+
+// function validTel() {
+//   const symbols = /^\d[\d\(\)\ -]{4,14}\d$/;
+//   const tel = document.getElementById('tel').value;
+//   const valid = symbols.test(tel);
+
+//   if (valid) {
+//     output = 'Номер телефона введен правильно!';
+//   } else {
+//     output = 'Номер телефона введен неправильно!';
+//   }
+
+//   form.text.innerHTML = text.innerHTML + output;
+//   return valid;
+// }

@@ -1,5 +1,5 @@
 .video {
-  padding-top: 120px;
+  padding-top: 121px;
   padding-left: 130px;
   padding-right: 130px;
   padding-bottom: 20px;
@@ -35,7 +35,7 @@
 
 .video__text {
   margin: 0 auto;
-  margin-bottom: 56px;
+  margin-bottom: 55px;
   width: 340px;
   font-weight: 300;
   font-size: 16px;
@@ -57,7 +57,7 @@
 
 .video__preview {
   position: relative;
-  margin-bottom: -118px;
+  margin-bottom: -117px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: -81px;
@@ -66,10 +66,10 @@
 
 .video__button {
   position: absolute;
-  top: 0;
-  background-color: inherit;
   top: 50%;
   left: 50%;
+  height: 65px;
+  background-color: inherit;
   transform: translate(-50%, -50%);
 }
 

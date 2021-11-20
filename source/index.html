@@ -69,16 +69,16 @@
             <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
           <section class="promo__user-data user-data">
-            <form class="user-data__form" action="#" method="POST">
+            <form class="user-data__form" action="https://echo.htmlacademy.ru" method="POST">
               <span class="user-data__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
               <div class="user-data__contacts">
-                <label class="visually-hidden" for="name-input">Введите Ваше Имя</label>
-                <input class="user-data__input" type="text" id="name-input" placeholder="Введите Ваше Имя"
+                <label class="visually-hidden" for="name">Введите Ваше Имя</label>
+                <input class="user-data__input" maxLength="50" minLength="1" name="name" type="text" id="name" placeholder="Введите Ваше Имя"
                 aria-label="Поле для ввода Вашего имени" required>
               </div>
               <div class="user-data__contacts">
-                <label class="visually-hidden" for="tel-input">Введите Ваш номер телефона</label>
-                <input class="user-data__input" type="tel" id="tel-input" placeholder="Введите Ваш номер телефона"
+                <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+                <input class="user-data__input" maxLength="11" minLength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Введите Ваш номер телефона"
                 aria-label="Поле для ввода Вашего номера телефона" required>
               </div>
               <button class="user-data__button button">Подобрать велосипед мечты</button>
@@ -111,38 +111,44 @@
         <div class="types-of-bicycles__container container">
           <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
           <ul class="types-of-bicycles__list">
-            <li class="types-of-bicycles__item types-of-bicycles__item--first">
-              <div class="types-of-bicycles__picture">
-                <picture>
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/first-example-tablet.webp 1x, ./img/first-example-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/first-example.webp 1x, ./img/first-example@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/first-example-tablet.jpg 1x, ./img/first-example-tablet@2x.jpg 2x">
-                  <img class="types-of-bicycles__img" src="./img/first-example.jpg" srcset="./img/first-example@2x.jpg 2x" width="342" height="503" alt="Фотография дорожного велосипеда">
-                </picture>
-              </div>
-              <span class="types-of-bicycles__name">Дорожный велосипед</span>
+            <li class="types-of-bicycles__item">
+              <a class="types-of-bicycles__link types-of-bicycles__link--first" href="#">
+                <div class="types-of-bicycles__picture">
+                  <picture>
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="./img/first-example-tablet.webp 1x, ./img/first-example-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/first-example.webp 1x, ./img/first-example@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="./img/first-example-tablet.jpg 1x, ./img/first-example-tablet@2x.jpg 2x">
+                    <img class="types-of-bicycles__img" src="./img/first-example.jpg" srcset="./img/first-example@2x.jpg 2x" width="342" height="503" alt="Фотография дорожного велосипеда">
+                  </picture>
+                </div>
+                <span class="types-of-bicycles__name">Дорожный велосипед</span>
+              </a>
             </li>
-            <li class="types-of-bicycles__item types-of-bicycles__item--second">
-              <div class="types-of-bicycles__picture">
-                <picture>
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/second-example-tablet.webp 1x, ./img/second-example-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/second-example.webp 1x, ./img/second-example@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/second-example-tablet.jpg 1x, ./img/second-example-tablet@2x.jpg 2x">
-                  <img class="types-of-bicycles__img" src="./img/second-example.jpg" srcset="./img/second-example@2x.jpg 2x" width="342" height="566" alt="Фотография горного велосипеда">
-                </picture>
-              </div>
-              <span class="types-of-bicycles__name">Горный велосипед</span>
+            <li class="types-of-bicycles__item">
+              <a class="types-of-bicycles__link types-of-bicycles__link--second" href="#">
+                <div class="types-of-bicycles__picture">
+                  <picture>
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="./img/second-example-tablet.webp 1x, ./img/second-example-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/second-example.webp 1x, ./img/second-example@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="./img/second-example-tablet.jpg 1x, ./img/second-example-tablet@2x.jpg 2x">
+                    <img class="types-of-bicycles__img" src="./img/second-example.jpg" srcset="./img/second-example@2x.jpg 2x" width="342" height="566" alt="Фотография горного велосипеда">
+                  </picture>
+                </div>
+                <span class="types-of-bicycles__name">Горный велосипед</span>
+              </a>
             </li>
-            <li class="types-of-bicycles__item types-of-bicycles__item--third">
-              <div class="types-of-bicycles__picture">
-                <picture>
-                  <source media="(max-width: 1023px)" type="image/webp" srcset="./img/third-example-tablet.webp 1x, ./img/third-example-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="./img/third-example.webp 1x, ./img/third-example@2x.webp 2x">
-                  <source media="(max-width: 1023px)" srcset="./img/third-example-tablet.jpg 1x, ./img/third-example-tablet@2x.jpg 2x">
-                  <img class="types-of-bicycles__img" src="./img/third-example.jpg" srcset="./img/third-example@2x.jpg 2x" width="342" height="512" alt="Фотография детского велосипеда">
-                </picture>
-              </div>
-              <span class="types-of-bicycles__name">Детский велосипед</span>
+            <li class="types-of-bicycles__item">
+              <a class="types-of-bicycles__link types-of-bicycles__link--third" href="#">
+                <div class="types-of-bicycles__picture">
+                  <picture>
+                    <source media="(max-width: 1023px)" type="image/webp" srcset="./img/third-example-tablet.webp 1x, ./img/third-example-tablet@2x.webp 2x">
+                    <source type="image/webp" srcset="./img/third-example.webp 1x, ./img/third-example@2x.webp 2x">
+                    <source media="(max-width: 1023px)" srcset="./img/third-example-tablet.jpg 1x, ./img/third-example-tablet@2x.jpg 2x">
+                    <img class="types-of-bicycles__img" src="./img/third-example.jpg" srcset="./img/third-example@2x.jpg 2x" width="342" height="512" alt="Фотография детского велосипеда">
+                  </picture>
+                </div>
+                <span class="types-of-bicycles__name">Детский велосипед</span>
+              </a>
             </li>
           </ul>
         </div>
