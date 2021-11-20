@@ -6,7 +6,7 @@
 
 .page-header__navigation {
   @media (max-width: $tablet-width) {
-    position: absolute;
+    position: fixed;
     top: 0;
   }
 }

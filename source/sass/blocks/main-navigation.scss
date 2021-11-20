@@ -5,14 +5,14 @@
   border-bottom: 1px solid rgba($basic-white, 0.2);
 
   @media (max-width: $tablet-width) {
-    position: absolute;
     display: none;
     width: 100%;
     max-width: 1023px;
     border-bottom: none;
 
     &--open {
-      display: block;
+      display: flex;
+      justify-content: end;
     }
   }
 }
@@ -44,6 +44,7 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    width: 320px;
     padding-top: 100px;
     padding-bottom: 138px;
     background-color: $basic-white;
