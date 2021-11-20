@@ -59,6 +59,13 @@
     line-height: 24px;
     color: rgba($primary-font, 0.5);
   }
+
+  @media (max-width: $tablet-width) {
+    padding-top: 12px;
+    padding-left: 21px;
+    padding-bottom: 10px;
+    letter-spacing: 0.2px;
+  }
 }
 
 .user-data__contacts {
@@ -77,4 +84,8 @@
   text-align: center;
   background-color: $additional-color;
   border-radius: 6px;
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 13px;
+  }
 }

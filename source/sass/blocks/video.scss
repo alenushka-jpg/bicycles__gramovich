@@ -8,7 +8,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 70px;
-    margin-bottom: 62px;
+    margin-bottom: 86px;
   }
 
   @media (max-width: $mobile-width) {
@@ -60,7 +60,7 @@
   margin-bottom: -117px;
 
   @media (max-width: $tablet-width) {
-    margin-bottom: -81px;
+    margin-bottom: -105px;
   }
 }
 
@@ -71,6 +71,11 @@
   height: 65px;
   background-color: inherit;
   transform: translate(-50%, -50%);
+
+  @media (max-width: $tablet-width) {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 .video__play {

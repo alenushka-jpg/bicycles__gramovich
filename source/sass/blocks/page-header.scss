@@ -17,10 +17,14 @@
   @media (max-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     height: 50px;
     padding-left: 21px;
   }
+}
+
+.page-header__logo {
+  margin-bottom: 4px;
 }
 
 .page-header__burger {
