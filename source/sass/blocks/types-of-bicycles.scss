@@ -18,6 +18,7 @@
   @media (max-width: $mobile-width) {
     padding-left: 25px;
     padding-right: 25px;
+    padding-bottom: 53px;
   }
 }
 
@@ -47,6 +48,10 @@
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    row-gap: 43px;
   }
 }
 
@@ -141,6 +146,21 @@
         width: 68px;
         height: 68px;
         border: 13px solid $additional-color;
+      }
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &--first {
+      &::before {
+        bottom: -40px;
+        left: -25px;
+      }
+    }
+    &--third {
+      &::before {
+        right: -14px;
+        top: 13px;
       }
     }
   }

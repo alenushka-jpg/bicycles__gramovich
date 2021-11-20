@@ -39,6 +39,10 @@
     font-size: 18px;
     color: $basic-black;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .user-data__input {
@@ -87,5 +91,10 @@
 
   @media (max-width: $tablet-width) {
     padding-bottom: 13px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 14px;
+    padding-bottom: 15px;
   }
 }
