@@ -6,11 +6,21 @@ const burger = document.querySelector('.page-header__burger');
 const navigation = document.querySelector('.main-navigation');
 const navigationClose = document.querySelector('.main-navigation__close');
 const navigationLinks = document.querySelectorAll('.main-navigation__link');
+const pageMain = document.querySelector('.page-main');
 
 pageHeader.classList.remove('no-js');
 
+function hideMain() {
+  pageMain.style.display = 'none';
+}
+
+function showMain() {
+  pageMain.style.display = 'block';
+}
+
 function showNavigation() {
   navigation.classList.add('main-navigation--open');
+  hideMain();
 
   navigationLinks.forEach((link) => {
     link.addEventListener('click', hideNavigation);
@@ -19,6 +29,7 @@ function showNavigation() {
 
 function hideNavigation() {
   navigation.classList.remove('main-navigation--open');
+  showMain();
 };
 
 const onBurgerClick = () => {
@@ -40,21 +51,3 @@ window.addEventListener("keydown", function (evt) {
 
 burger.addEventListener('click', onBurgerClick);
 navigationClose.addEventListener('click', onCloseClick);
-
-// const form = document.querySelector('.user-data__form');
-// const text = document.querySelector('.user-data__text');
-
-// function validTel() {
-//   const symbols = /^\d[\d\(\)\ -]{4,14}\d$/;
-//   const tel = document.getElementById('tel').value;
-//   const valid = symbols.test(tel);
-
-//   if (valid) {
-//     output = 'Номер телефона введен правильно!';
-//   } else {
-//     output = 'Номер телефона введен неправильно!';
-//   }
-
-//   form.text.innerHTML = text.innerHTML + output;
-//   return valid;
-// }

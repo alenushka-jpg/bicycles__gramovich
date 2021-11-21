@@ -28,14 +28,18 @@
 
   .main-navigation__list {
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .main-navigation__close {
     display: none;
   }
 
-  .overlay {
-    display: none;
+  @media (max-width: $tablet-width) {
+    .main-navigation__list {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -48,7 +52,8 @@
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
-    width: 320px;
+    width: 100%;
+    height: 100vh;
     padding-top: 100px;
     padding-bottom: 138px;
     background-color: $basic-white;
@@ -75,6 +80,15 @@
   letter-spacing: -0.005em;
   text-decoration: none;
   color: rgba($basic-white, 0.7);
+
+  &:focus,
+  &:hover {
+    color: $basic-white;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.4);
+  }
 
   @media (max-width: $tablet-width) {
     position: relative;

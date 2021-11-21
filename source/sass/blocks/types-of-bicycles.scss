@@ -66,6 +66,22 @@
     position: absolute;
   }
 
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .types-of-bicycles__img {
+      transform: scale(1.01);
+      box-shadow: 0 3px 7px $additional-font;
+    }
+  }
+
+  &:active {
+    .types-of-bicycles__img {
+      filter: brightness(85%);
+    }
+  }
+
   &--first {
     margin-top: 10px;
 
@@ -172,6 +188,7 @@
 
 .types-of-bicycles__img {
   position: relative;
+  border-radius: 10px;
   z-index: 0;
 
   @media (max-width: $tablet-width) {

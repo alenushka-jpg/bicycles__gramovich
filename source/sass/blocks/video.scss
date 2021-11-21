@@ -76,6 +76,23 @@
   background-color: inherit;
   transform: translate(-50%, -50%);
 
+  &:hover,
+  &:focus {
+    .video__play-shape {
+      fill: darken($additional-color, 5);
+    }
+
+    .video__play-inner {
+      fill: $basic-white;
+    }
+  }
+
+  &:active {
+    .video__play-shape {
+      fill: darken($additional-color, 20);
+    }
+  }
+
   @media (max-width: $tablet-width) {
     width: 90px;
     height: 90px;

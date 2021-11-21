@@ -4,6 +4,16 @@
   z-index: 20;
 }
 
+.no-js {
+  .page-header__burger {
+    display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .page-header__navigation {
   @media (max-width: $tablet-width) {
     position: fixed;

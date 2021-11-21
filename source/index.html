@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Велосипеды</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/open-sans-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/open-sans-regular.woff" as="font" type="font/woff" crossorigin>
   </head>
   <body>
     <header class="page-header no-js container">
@@ -21,7 +23,6 @@
         </button>
       </div>
       <nav class="page-header__navigation main-navigation">
-        <div class="overlay"></div>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
             <a class="main-navigation__link" href="#about-us">О нас
@@ -160,8 +161,9 @@
           <div class="video__preview">
             <button class="video__button button" type="button">
               <span class="visually-hidden">Включить видео про велосипеды</span>
-              <svg class="video__play" width="65" height="65">
-                <use xlink:href="./img/sprite_auto.svg#icon_play"></use>
+              <svg class="video__play-svg" width="65" height="65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
+                <path class="video__play-shape" fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
+                <path class="video__play-inner" fill-rule="evenodd" clip-rule="evenodd" d="M28.6001 23.3999L41.6001 32.4999L28.6001 41.5999V23.3999Z" fill="#070707"/>
               </svg>
             </button>
             <picture>
@@ -204,6 +206,6 @@
         </li>
       </ul>
     </footer>
-    <script src="./js/script.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
