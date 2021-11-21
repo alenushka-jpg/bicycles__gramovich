@@ -1,5 +1,4 @@
 'use strict';
-
 //Открытие выпадающего меню
 const pageHeader = document.querySelector('.page-header');
 const burger = document.querySelector('.page-header__burger');

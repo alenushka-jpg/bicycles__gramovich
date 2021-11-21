@@ -18,7 +18,7 @@
   }
 }
 
-.video__title {
+.video h2 {
   margin-top: 0;
   margin-bottom: 20px;
   font-weight: 600;
@@ -33,7 +33,7 @@
   }
 }
 
-.video__text {
+.video p {
   margin: 0 auto;
   margin-bottom: 55px;
   width: 340px;
@@ -68,7 +68,7 @@
   }
 }
 
-.video__button {
+.video button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,7 +104,7 @@
   }
 }
 
-.video__play {
+.video__play-svg {
   @media (max-width: $tablet-width) {
     width: 90px;
     height: 90px;

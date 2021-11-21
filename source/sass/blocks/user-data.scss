@@ -10,7 +10,7 @@
   }
 }
 
-.user-data__form {
+.user-data form {
   @media (max-width: $tablet-width) {
     width: 321px;
     margin-left: auto;
@@ -22,7 +22,7 @@
   }
 }
 
-.user-data__text {
+.user-data span {
   display: block;
   padding-top: 5px;
   margin-bottom: 19px;
@@ -45,7 +45,7 @@
   }
 }
 
-.user-data__input {
+.user-data input {
   display: block;
   width: 100%;
   padding-top: 13px;
@@ -76,7 +76,7 @@
   margin-bottom: 20px;
 }
 
-.user-data__button {
+.user-data button {
   width: 100%;
   padding-top: 17px;
   padding-left: 15px;

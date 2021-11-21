@@ -22,7 +22,7 @@
   }
 }
 
-.types-of-bicycles__title {
+.types-of-bicycles h2 {
   margin-top: 0;
   margin-bottom: 51px;
   font-weight: 600;
@@ -37,7 +37,7 @@
   }
 }
 
-.types-of-bicycles__list {
+.types-of-bicycles ul {
   display: flex;
   column-gap: 50px;
   padding: 0;
@@ -173,6 +173,7 @@
         left: -25px;
       }
     }
+
     &--third {
       &::before {
         right: -14px;
@@ -197,7 +198,7 @@
   }
 }
 
-.types-of-bicycles__name {
+.types-of-bicycles span {
   font-weight: 600;
   font-size: 22px;
   line-height: 34px;

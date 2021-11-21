@@ -19,13 +19,17 @@
   }
 }
 
-.contacts-list__link {
+.contacts-list a {
   display: flex;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: rgba($basic-black, 0.5);
   text-decoration: none;
+
+  &:hover {
+    color: rgba($basic-black, 0.7);
+  }
 }
 
 .contacts-list__svg {

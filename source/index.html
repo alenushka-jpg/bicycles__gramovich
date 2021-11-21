@@ -15,7 +15,7 @@
         <svg class="page-header__logo" width="68" height="21">
           <use xlink:href="./img/sprite_auto.svg#logo"></use>
         </svg>
-        <button class="page-header__burger button">
+        <button class="page-header__burger button" type="button">
           <span class="visually-hidden">Открыть меню</span>
           <svg width="30" height="30">
             <use xlink:href="./img/sprite_auto.svg#icon_burger"></use>
@@ -65,90 +65,105 @@
       <section class="promo">
         <div class="promo__container container">
           <div class="promo__content">
-            <img class="promo__logo logo" src="./img/svg/logo.svg" width="68" height="21" alt="">
-            <h1 class="promo__title">Мы продаем велосипеды</h1>
-            <p class="promo__text">Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+            <svg class="promo__logo" width="68" height="21">
+              <use xlink:href="./img/sprite_auto.svg#logo"></use>
+            </svg>
+            <h1>Мы продаем велосипеды</h1>
+            <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
           </div>
           <section class="promo__user-data user-data">
-            <form class="user-data__form" action="https://echo.htmlacademy.ru" method="POST">
-              <span class="user-data__text">Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <span>Заполните поля ниже и мы подберем велосипед Вашей мечты</span>
               <div class="user-data__contacts">
                 <label class="visually-hidden" for="name">Введите Ваше Имя</label>
-                <input class="user-data__input" maxLength="50" minLength="1" name="name" type="text" id="name" placeholder="Введите Ваше Имя"
+                <input maxLength="50" minLength="1" name="name" type="text" id="name" placeholder="Введите Ваше Имя"
                 aria-label="Поле для ввода Вашего имени" required>
               </div>
               <div class="user-data__contacts">
                 <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-                <input class="user-data__input" maxLength="11" minLength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Введите Ваш номер телефона"
+                <input maxLength="11" minLength="11" name="tel" type="tel" id="tel" pattern="\+?[0-9\s\-\(\)]+" placeholder="Введите Ваш номер телефона"
                 aria-label="Поле для ввода Вашего номера телефона" required>
               </div>
-              <button class="user-data__button button">Подобрать велосипед мечты</button>
+              <button class="button" type="submit">Подобрать велосипед мечты</button>
             </form>
           </section>
         </div>
       </section>
       <section class="about-us container" id="about-us">
-        <h2 class="about-us__title">Несколько фактов о нас</h2>
-        <ol class="about-us__list">
-          <li class="about-us__item">
-            <span class="about-us__number">01</span>
+        <h2>Несколько фактов о нас</h2>
+        <ol>
+          <li>
+            <span>01</span>
             Самый широкий выбор велосипедов!
           </li>
-          <li class="about-us__item">
-            <span class="about-us__number about-us__number--two">02</span>
+          <li>
+            <span>02</span>
             Доставка велосипедов по всей России!
           </li>
-          <li class="about-us__item">
-            <span class="about-us__number about-us__number--three">03</span>
+          <li>
+            <span>03</span>
             Большой выбор крутых аксессуаров!
           </li>
-          <li class="about-us__item">
-            <span class="about-us__number about-us__number--four">04</span>
+          <li>
+            <span>04</span>
             Профессиональные консультации!
           </li>
         </ol>
       </section>
       <section class="types-of-bicycles" id="types">
         <div class="types-of-bicycles__container container">
-          <h2 class="types-of-bicycles__title">Виды велосипедов</h2>
-          <ul class="types-of-bicycles__list">
-            <li class="types-of-bicycles__item">
+          <h2>Виды велосипедов</h2>
+          <ul>
+            <li>
               <a class="types-of-bicycles__link types-of-bicycles__link--first" href="#">
                 <div class="types-of-bicycles__picture">
                   <picture>
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" type="image/webp" srcset="./img/first-example-tablet.webp 1x, ./img/first-example-tablet@2x.webp 2x">
+                    <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
                     <source type="image/webp" srcset="./img/first-example.webp 1x, ./img/first-example@2x.webp 2x">
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" srcset="./img/first-example-tablet.jpg 1x, ./img/first-example-tablet@2x.jpg 2x">
+                    <!-- без ретины 342 на 503, c ретиной 684 на 1006 -->
                     <img class="types-of-bicycles__img" src="./img/first-example.jpg" srcset="./img/first-example@2x.jpg 2x" width="342" height="503" alt="Фотография дорожного велосипеда">
                   </picture>
                 </div>
-                <span class="types-of-bicycles__name">Дорожный велосипед</span>
+                <span>Дорожный велосипед</span>
               </a>
             </li>
-            <li class="types-of-bicycles__item">
+            <li>
               <a class="types-of-bicycles__link types-of-bicycles__link--second" href="#">
                 <div class="types-of-bicycles__picture">
                   <picture>
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" type="image/webp" srcset="./img/second-example-tablet.webp 1x, ./img/second-example-tablet@2x.webp 2x">
+                    <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
                     <source type="image/webp" srcset="./img/second-example.webp 1x, ./img/second-example@2x.webp 2x">
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" srcset="./img/second-example-tablet.jpg 1x, ./img/second-example-tablet@2x.jpg 2x">
+                    <!-- без ретины 342 на 566, c ретиной 684 на 1132 -->
                     <img class="types-of-bicycles__img" src="./img/second-example.jpg" srcset="./img/second-example@2x.jpg 2x" width="342" height="566" alt="Фотография горного велосипеда">
                   </picture>
                 </div>
-                <span class="types-of-bicycles__name">Горный велосипед</span>
+                <span>Горный велосипед</span>
               </a>
             </li>
-            <li class="types-of-bicycles__item">
+            <li>
               <a class="types-of-bicycles__link types-of-bicycles__link--third" href="#">
                 <div class="types-of-bicycles__picture">
                   <picture>
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" type="image/webp" srcset="./img/third-example-tablet.webp 1x, ./img/third-example-tablet@2x.webp 2x">
+                    <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
                     <source type="image/webp" srcset="./img/third-example.webp 1x, ./img/third-example@2x.webp 2x">
+                    <!-- без ретины 270 на 300, c ретиной 540 на 600 -->
                     <source media="(max-width: 1023px)" srcset="./img/third-example-tablet.jpg 1x, ./img/third-example-tablet@2x.jpg 2x">
+                    <!-- без ретины 342 на 513, c ретиной 684 на 1026 -->
                     <img class="types-of-bicycles__img" src="./img/third-example.jpg" srcset="./img/third-example@2x.jpg 2x" width="342" height="512" alt="Фотография детского велосипеда">
                   </picture>
                 </div>
-                <span class="types-of-bicycles__name">Детский велосипед</span>
+                <span>Детский велосипед</span>
               </a>
             </li>
           </ul>
@@ -156,10 +171,10 @@
       </section>
       <section class="video" id="video">
         <div class="container">
-          <h2 class="video__title">Видео про велосипеды</h2>
-          <p class="video__text">В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+          <h2>Видео про велосипеды</h2>
+          <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
           <div class="video__preview">
-            <button class="video__button button" type="button">
+            <button class="button" type="button">
               <span class="visually-hidden">Включить видео про велосипеды</span>
               <svg class="video__play-svg" width="65" height="65" viewBox="0 0 65 65" xmlns="http://www.w3.org/2000/svg">
                 <path class="video__play-shape" fill-rule="evenodd" clip-rule="evenodd" d="M32.5 65C50.4493 65 65 50.4493 65 32.5C65 14.5507 50.4493 0 32.5 0C14.5507 0 0 14.5507 0 32.5C0 50.4493 14.5507 65 32.5 65Z" fill="#0AD9C6"/>
@@ -167,40 +182,56 @@
               </svg>
             </button>
             <picture>
+              <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
               <source media="(max-width: 767px)" type="image/webp" srcset="./img/video-preview-mobile.webp 1x, ./img/video-preview-mobile@2x.webp 2x">
+              <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
               <source media="(max-width: 1023px)" type="image/webp" srcset="./img/video-preview-tablet.webp 1x, ./img/video-preview-tablet@2x.webp 2x">
+              <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
               <source type="image/webp" srcset="./img/video-preview.webp 1x, ./img/video-preview@2x.webp 2x">
+              <!-- без ретины 288 на 162, c ретиной 576 на 324 -->
               <source media="(max-width: 767px)" srcset="./img/video-preview-mobile.jpg 1x, ./img/video-preview-mobile@2x.jpg 2x">
+              <!-- без ретины 503 на 282, c ретиной 1006 на 564 -->
               <source media="(max-width: 1023px)" srcset="./img/video-preview-tablet.jpg 1x, ./img/video-preview-tablet@2x.jpg 2x">
+              <!-- без ретины 929 на 522, c ретиной 1858 на 1044 -->
               <img class="video__img" src="./img/video-preview.jpg" srcset="./img/video-preview@2x.jpg 2x" height="522" width="929" alt="Фотография велосипеда">
             </picture>
           </div>
         </div>
       </section>
       <section class="address container" id="contacts">
-        <h2 class="address__title">Как нас найти?</h2>
-        <p class="address__text">Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+        <h2>Как нас найти?</h2>
+        <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
         <picture>
+          <!-- без ретины 319 на 250, c ретиной 638 на 500 -->
           <source media="(max-width: 767px)" type="image/webp" srcset="./img/map-mobile.webp 1x, ./img/map-mobile@2x.webp 2x">
+          <!-- без ретины 698 на 545, c ретиной 1396 на 1090 -->
           <source media="(max-width: 1023px)" type="image/webp" srcset="./img/map-tablet.webp 1x, ./img/map-tablet@2x.webp 2x">
+          <!-- без ретины 957 на 530, c ретиной 1914 на 1060 -->
           <source type="image/webp" srcset="./img/map.webp 1x, ./img/map@2x.webp 2x">
+          <!-- без ретины 319 на 250, c ретиной 638 на 500 -->
           <source media="(max-width: 767px)" srcset="./img/map-mobile.jpg 1x, ./img/map-mobile@2x.jpg 2x">
+          <!-- без ретины 698 на 545, c ретиной 1396 на 1090 -->
           <source media="(max-width: 1023px)" srcset="./img/map-tablet.jpg 1x, ./img/map-tablet@2x.jpg 2x">
+          <!-- без ретины 957 на 530, c ретиной 1914 на 1060 -->
           <img class="address__img-map" src="./img/map.png" srcset="./img/map@2x.jpg 2x" height="530" width="957" alt="Карта адреса">
         </picture>
       </section>
     </main>
     <footer class="page-footer container">
-      <ul class="page-footer__contacts contacts-list">
-        <li class="contacts-list__item">
-          <a class="contacts-list__link" href="mailto:puteshestviemechta@gmail.ru">
-            <img class="contacts-list__svg" src="./img/svg/icon_gmail.svg" alt="">
+      <ul class="contacts-list">
+        <li>
+          <a href="mailto:puteshestviemechta@gmail.ru">
+            <svg class="contacts-list__svg" width="26" height="20" fill="none">
+              <use xlink:href="./img/sprite_auto.svg#icon_gmail"></use>
+            </svg>
             puteshestviemechta@gmail.ru
           </a>
         </li>
-        <li class="contacts-list__item">
-          <a class="contacts-list__link" href="tel:+749978468446">
-            <img class="contacts-list__svg" src="./img/svg/icon_phone.svg" alt="">
+        <li>
+          <a href="tel:+749978468446">
+            <svg class="contacts-list__svg" width="21" height="23" fill="none">
+              <use xlink:href="./img/sprite_auto.svg#icon_phone"></use>
+            </svg>
             +7 (499) -784-684-46
           </a>
         </li>

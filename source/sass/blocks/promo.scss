@@ -5,6 +5,10 @@
   background-position: center;
   background-size: 1440px 825px;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/bicycles-background@2x.jpg");
+  }
+
   @media (max-width: $tablet-width) {
     background-color: inherit;
     background-image: none;
@@ -36,6 +40,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/bicycles-background-tablet@2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width) {
@@ -43,18 +51,22 @@
     padding-left: 16px;
     padding-right: 16px;
     background-image: url("/img/bicycles-background-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/bicycles-background-mobile@2x.jpg");
+    }
   }
 }
 
 .promo__logo {
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 
   @media (max-width: $tablet-width) {
     display: none;
   }
 }
 
-.promo__title {
+.promo h1 {
   margin-top: 0;
   margin-bottom: 24px;
   font-weight: 700;
@@ -71,7 +83,7 @@
   }
 }
 
-.promo__text {
+.promo p {
   display: block;
   margin: 0;
   font-weight: 300;

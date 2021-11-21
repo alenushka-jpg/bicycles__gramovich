@@ -31,6 +31,10 @@
     height: 50px;
     padding-left: 21px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 17px;
+  }
 }
 
 .page-header__logo {
