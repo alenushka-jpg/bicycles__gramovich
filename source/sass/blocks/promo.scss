@@ -5,7 +5,8 @@
   background-position: center;
   background-size: 1440px 825px;
 
-  @media (min-resolution: 2dppx) {
+  @media only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
     background-image: url("/img/bicycles-background@2x.jpg");
   }
 
@@ -41,7 +42,8 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media (min-resolution: 2dppx) {
+    @media only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
       background-image: url("/img/bicycles-background-tablet@2x.jpg");
     }
   }
@@ -50,9 +52,10 @@
     padding-top: 135px;
     padding-left: 16px;
     padding-right: 16px;
-    background-image: url("/img/bicycles-background-mobile.jpg");
+    background-image: url("/img/bicycles-background@2x.jpg");
 
-    @media (min-resolution: 2dppx) {
+    @media only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
       background-image: url("/img/bicycles-background-mobile@2x.jpg");
     }
   }

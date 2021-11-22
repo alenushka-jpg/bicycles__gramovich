@@ -59,6 +59,7 @@
   line-height: 24px;
 
   &::placeholder {
+    font-family: "Open Sans", "Courier", monospace;
     font-size: 15px;
     line-height: 24px;
     color: rgba($primary-font, 0.5);
