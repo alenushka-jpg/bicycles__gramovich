@@ -45,12 +45,14 @@
   list-style: none;
 
   @media (max-width: $tablet-width) {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 50px;
   }
 
   @media (max-width: $mobile-width) {
+    flex-direction: column;
     row-gap: 43px;
   }
 }
@@ -145,10 +147,11 @@
 
       &::before {
         top: inherit;
-        bottom: -37px;
+        bottom: -28px;
         left: -36px;
         width: 127px;
         height: 127px;
+        transform: none;
         border: 18px solid $additional-color;
       }
     }
@@ -176,7 +179,7 @@
   @media (max-width: $mobile-width) {
     &--first {
       &::before {
-        bottom: -40px;
+        bottom: -29px;
         left: -25px;
       }
     }
