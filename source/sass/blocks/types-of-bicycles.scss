@@ -3,10 +3,7 @@
 }
 
 .types-of-bicycles__container {
-  padding-top: 149px;
-  padding-right: 157px;
-  padding-left: 157px;
-  padding-bottom: 148px;
+  padding: 149px 80px 148px;
 
   @media (max-width: $tablet-width) {
     padding-top: 50px;
@@ -38,8 +35,11 @@
 }
 
 .types-of-bicycles ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,max-content));
+  justify-content: center;
   column-gap: 50px;
+  width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -55,38 +55,45 @@
   }
 }
 
-.types-of-bicycles__link {
-  position: relative;
+.types-of-bicycles a {
   display: block;
   text-align: center;
   text-decoration: none;
-
-  &::before {
-    content: "";
-    position: absolute;
-  }
 
   &:hover,
   &:focus {
     outline: none;
 
-    .types-of-bicycles__img {
+    .types-of-bicycles img {
       transform: scale(1.01);
       box-shadow: 0 3px 7px $additional-font;
     }
   }
 
   &:active {
-    .types-of-bicycles__img {
+    .types-of-bicycles img {
       filter: brightness(85%);
     }
+  }
+}
+
+.types-of-bicycles__picture {
+  position: relative;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
   }
 
   &--first {
     margin-top: 10px;
 
     &::before {
-      top: 44%;
+      top: 49%;
       left: -60px;
       width: 180px;
       height: 180px;
@@ -111,7 +118,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: 32px;
+      bottom: -23px;
       right: -22px;
       width: 47px;
       height: 47px;
@@ -183,12 +190,10 @@
   }
 }
 
-.types-of-bicycles__picture {
-  margin-bottom: 20px;
-}
-
 .types-of-bicycles img {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
   z-index: 0;
 

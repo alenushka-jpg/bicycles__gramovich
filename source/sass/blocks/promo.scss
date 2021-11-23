@@ -21,6 +21,7 @@
   grid-template-columns: 1fr 327px;
   column-gap: 186px;
   width: 880px;
+  max-height: 825px;
   padding-top: 318px;
   padding-bottom: 240px;
 
@@ -37,6 +38,7 @@
 .promo__content {
   @media (max-width: $tablet-width) {
     padding-top: 149px;
+    background-color: $dark-background;
     background-image: url("/img/bicycles-background-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
