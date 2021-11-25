@@ -4,7 +4,8 @@
   var burger = document.querySelector('.page-header__burger');
   var navigation = document.querySelector('.main-navigation');
   var navigationClose = document.querySelector('.main-navigation__close');
-  var navigationLinks = document.querySelectorAll('.main-navigation__link');
+  var navigationList = document.querySelector('.main-navigation__list');
+  var navigationLinks = navigationList.querySelectorAll('a');
   var pageMain = document.querySelector('.page-main');
   var pageFooter = document.querySelector('.page-footer');
 
@@ -23,16 +24,20 @@
   function showNavigation() {
     navigation.classList.add('main-navigation--open');
     hidePage();
-
-    navigationLinks.forEach(function (link) {
-      link.addEventListener('click', showPage);
-      showPage();
-    });
   }
 
   function hideNavigation() {
     navigation.classList.remove('main-navigation--open');
     showPage();
+  }
+
+  for (var i = 0; i < navigationLinks.length; i++) {
+    var element = navigationLinks[i];
+
+    element.addEventListener('click', function () {
+      hideNavigation();
+      showPage();
+    });
   }
 
   function onBurgerClick() {
