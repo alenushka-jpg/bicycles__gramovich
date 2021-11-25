@@ -1,9 +1,9 @@
 .promo {
-  background-color: $primary-font;
+  background-color: $dark-background;
   background-image: url("../img/bicycles-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 825px;
+  background-size: cover;
 
   @media only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
@@ -39,7 +39,7 @@
 .promo__content {
   @media (max-width: $tablet-width) {
     padding-top: 135px;
-    background-color: $primary-font;
+    background-color: $dark-background;
     background-image: url("../img/bicycles-background-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,6 +62,11 @@
       background-image: url("../img/bicycles-background-mobile@2x.jpg");
     }
   }
+}
+
+.promo__content a {
+  display: block;
+  width: min-content;
 }
 
 .promo__logo {
