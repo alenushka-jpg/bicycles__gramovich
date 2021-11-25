@@ -1,6 +1,5 @@
 'use strict';
 (function () {
-  var pageHeader = document.querySelector('.page-header');
   var burger = document.querySelector('.page-header__burger');
   var navigation = document.querySelector('.main-navigation');
   var navigationClose = document.querySelector('.main-navigation__close');
@@ -8,8 +7,6 @@
   var navigationLinks = navigationList.querySelectorAll('a');
   var pageMain = document.querySelector('.page-main');
   var pageFooter = document.querySelector('.page-footer');
-
-  pageHeader.classList.remove('no-js');
 
   function hidePage() {
     pageMain.style.display = 'none';
