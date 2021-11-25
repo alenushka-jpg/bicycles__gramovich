@@ -3,13 +3,10 @@
 }
 
 .types-of-bicycles__container {
-  padding: 149px 80px 148px;
+  padding: 149px 80px 147px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 50px;
-    padding-left: 89px;
-    padding-right: 89px;
-    padding-bottom: 70px;
+    padding: 49px 89px 70px;
   }
 
   @media (max-width: $mobile-width) {
@@ -36,7 +33,7 @@
 
 .types-of-bicycles ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  grid-template-columns: repeat(3, minmax(250px, max-content));
   justify-content: center;
   column-gap: 50px;
   width: 100%;
@@ -57,6 +54,22 @@
   }
 }
 
+.types-of-bicycles li:nth-child(3n-2) {
+  margin-top: 10px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
+.types-of-bicycles li:nth-child(3n-1) {
+  margin-top: 38px;
+
+  @media (max-width: $tablet-width) {
+    margin-top: 0;
+  }
+}
+
 .types-of-bicycles a {
   display: block;
   text-align: center;
@@ -66,14 +79,14 @@
   &:focus {
     outline: none;
 
-    .types-of-bicycles img {
+    img {
       transform: scale(1.01);
       box-shadow: 0 3px 7px $additional-font;
     }
   }
 
   &:active {
-    .types-of-bicycles img {
+    img {
       filter: brightness(85%);
     }
   }
@@ -84,7 +97,7 @@
   width: fit-content;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 
   &::before {
     content: "";
@@ -92,8 +105,6 @@
   }
 
   &--first {
-    margin-top: 10px;
-
     &::before {
       top: 49%;
       left: -60px;
@@ -106,8 +117,6 @@
   }
 
   &--second {
-    margin-top: 39px;
-
     &::before {
       top: -19px;
       left: -19px;
@@ -145,8 +154,6 @@
     margin-bottom: 20px;
 
     &--first {
-      margin-top: 0;
-
       &::before {
         top: inherit;
         bottom: -28px;
@@ -159,8 +166,6 @@
     }
 
     &--second {
-      margin-top: 0;
-
       &::after,
       &::before {
         display: none;

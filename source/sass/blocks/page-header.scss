@@ -1,7 +1,13 @@
 .page-header {
-  position: relative;
-  margin-bottom: -64px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 20;
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .no-js {
@@ -16,7 +22,7 @@
 
 .page-header__navigation {
   @media (max-width: $tablet-width) {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
 }
@@ -39,6 +45,10 @@
 
 .page-header__logo {
   margin-bottom: 4px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-header__burger {

@@ -1,24 +1,14 @@
 .address {
-  padding-top: 150px;
-  padding-left: 130px;
-  padding-right: 130px;
+  margin-bottom: 41px;
 
   @media (max-width: $tablet-width) {
-    padding-top: 70px;
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-top: 34px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 22px;
   }
 }
 
 .address h2 {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   font-weight: 600;
   font-size: 30px;
   line-height: 30px;

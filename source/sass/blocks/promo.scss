@@ -1,13 +1,13 @@
 .promo {
-  background-color: $dark-background;
-  background-image: url("/img/bicycles-background.jpg");
+  background-color: $primary-font;
+  background-image: url("../img/bicycles-background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 1440px 825px;
 
   @media only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
-    background-image: url("/img/bicycles-background@2x.jpg");
+    background-image: url("../img/bicycles-background@2x.jpg");
   }
 
   @media (max-width: $tablet-width) {
@@ -21,12 +21,13 @@
   grid-template-columns: 1fr 327px;
   column-gap: 186px;
   width: 880px;
-  max-height: 825px;
-  padding-top: 318px;
+  min-height: 827px;
+  padding-top: 317px;
   padding-bottom: 240px;
 
   @media (max-width: $tablet-width) {
     width: auto;
+    min-height: auto;
     column-gap: 0;
     grid-template-columns: 1fr;
     padding-top: 0;
@@ -37,16 +38,16 @@
 
 .promo__content {
   @media (max-width: $tablet-width) {
-    padding-top: 149px;
-    background-color: $dark-background;
-    background-image: url("/img/bicycles-background-tablet.jpg");
+    padding-top: 135px;
+    background-color: $primary-font;
+    background-image: url("../img/bicycles-background-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     @media only screen and (min-resolution: 192dpi),
       only screen and (min-resolution: 2dppx) {
-      background-image: url("/img/bicycles-background-tablet@2x.jpg");
+      background-image: url("../img/bicycles-background-tablet@2x.jpg");
     }
   }
 
@@ -54,11 +55,11 @@
     padding-top: 135px;
     padding-left: 16px;
     padding-right: 16px;
-    background-image: url("/img/bicycles-background@2x.jpg");
+    background-image: url("../img/bicycles-background@2x.jpg");
 
     @media only screen and (min-resolution: 192dpi),
       only screen and (min-resolution: 2dppx) {
-      background-image: url("/img/bicycles-background-mobile@2x.jpg");
+      background-image: url("../img/bicycles-background-mobile@2x.jpg");
     }
   }
 }

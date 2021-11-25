@@ -1,5 +1,5 @@
 .main-navigation {
-  max-width: 880px;
+  width: 880px;
   padding-left: 20px;
   padding-right: 10px;
   margin-left: auto;
@@ -45,7 +45,8 @@
 
 .main-navigation ul {
   display: flex;
-  justify-content: space-between;
+  column-gap: 136px;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -85,6 +86,10 @@
     color: $basic-white;
   }
 
+  &:focus {
+    border: 1px solid $basic-black;
+  }
+
   &:active {
     color: rgba($basic-white, 0.4);
   }
@@ -101,10 +106,13 @@
 }
 
 .main-navigation__arrow {
+  display: none;
+
   @media (max-width: $tablet-width) {
     position: absolute;
     top: 23px;
     right: 24px;
+    display: block;
   }
 }
 
