@@ -1,8 +1,9 @@
 .contacts-list {
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   column-gap: 90px;
+  row-gap: 20px;
   padding-left: 0;
   padding-right: 20px;
   margin: 0;
@@ -15,7 +16,17 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     column-gap: 0;
-    row-gap: 22px;
+    row-gap: 23px;
+    padding-left: 5px;
+    padding-right: 0;
+  }
+}
+
+.contacts-list li {
+  @media (max-width: $mobile-width) {
+    &:nth-child(3n-1) a {
+      padding-right: 17px;
+    }
   }
 }
 

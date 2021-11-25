@@ -32,11 +32,16 @@
 
 .about-us ol {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  column-gap: 3.2%;
   padding: 0;
   margin: 0;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    column-gap: 5.2%;
+  }
 
   @media (max-width: $mobile-width) {
     align-items: center;
@@ -47,6 +52,7 @@
 .about-us li {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   width: 263px;
   margin-bottom: 40px;
   font-weight: 400;
@@ -56,6 +62,10 @@
   color: $basic-black;
   text-align: center;
 
+  &:first-child span {
+    margin-bottom: 17px;
+  }
+
   &:last-child {
     margin-right: 0;
     margin-bottom: 0;
@@ -63,11 +73,23 @@
 
   @media (max-width: $tablet-width) {
     font-size: 22px;
+
+    &:first-child span {
+      margin-bottom: 19px;
+    }
   }
 
   @media (max-width: $mobile-width) {
     font-size: 18px;
-    margin-bottom: 39px;
+    margin-bottom: 43px;
+
+    &:first-child {
+      margin-bottom: 35px;
+    }
+
+    &:nth-child(3n-1) span {
+      margin-bottom: 7px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -76,14 +98,23 @@
 }
 
 .about-us span {
-  margin-bottom: 17px;
+  margin-bottom: 14px;
   font-weight: 700;
   font-size: 28px;
   line-height: 38px;
   letter-spacing: -1.27273px;
   color: $additional-color;
 
-  @media (max-width: $mobile-width) {
-    margin-bottom: 13px;
+  @media (max-width: $tablet-width) {
+    margin-bottom: 17px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 11px;
+  }
+}
+
+.about-us p {
+  margin: 0 auto;
+  width: 263px;
 }
