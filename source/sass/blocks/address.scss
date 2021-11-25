@@ -4,6 +4,10 @@
   @media (max-width: $tablet-width) {
     margin-bottom: 22px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+  }
 }
 
 .address h2 {
